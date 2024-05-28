@@ -1,112 +1,136 @@
 .xx-large {
-    font-size: xx-large;
+  font-size: xx-large;
 }
 @font-face {
-    font-family: Indie;
-    src: url("fonts/inde.woff2");
+  font-family: indie;
+  src: url("../fonts/inde.woff2");
 }
-   .center{
-    text-align: center;
-   }
-   body {
-    font-family: 'Poppins',sans-serif;
-   }
-   html {
-    background: url(../img/bg.jpg) no-repeat center center fixed;
-    background-size: cover;
-   }
-   main {
-    margin-left: 8px;
-    margin-right: 8px;
-   }
-   nav {
-    background-color: #1c328a;
-    height: 80px;
+@font-face {
+  font-family: arista;
+  src: url("../fonts/arista.woff2");
+}
+@font-face {
+  font-family: neon;
+  src: url("../fonts/neon.woff2");
+}
+.center {
+  text-align: center;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+main {
+  margin: 0 30px;
+}
+main h1 {
+  padding: 15px;
+}
+nav {
+  background-color: #1c328a;
+  height: 80px;
+  width: 100%;
+}
+nav label.logo {
+  font-family: arista, sans-serif;
+  font-size: xx-large;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 11.78px 13px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+a.active, nav ul li a:hover {
+  background: #4162e6;
+  transition: 0.5768s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+#check, .checkbtn {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
     width: 100%;
-   }
-   nav ul {
-    float: right;
-    margin-right: 20px;
-   }
-   nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-   }
-   nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 11.78px 13px;
-    box-sizing: border-box;
-    border-radius: 5px;
-   }
-   a.active,a:hover{
-    background: #4162e6;
-    transition: 0.5768s;
-   }
-   .checkbtn {
-font-size: 30px;
-color: white;
-float: right;
-line-height: 80px;
-margin-right: 40px;
-cursor: pointer;
-   }
-  #check {
-    display: none;
+    height: 100vh;
+    background: #0c1437;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    background: none;
+    color: #4162e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
-@media(max-width: 952px){
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    nav ul li a {
-        font-size: 16px;
-    }
+label.logo {
+  color: white;
+  font-size: 22px;
+  line-height: 80px;
+  font-weight: bold;
+  padding-left: 15px;
 }
-@media (max-width: 858px){
-    .checkbtn{display: block;}
-    ul {
-        position:fixed;
-        width: 100%;
-        height: 100vh;
-        background: #0c1437;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-    nav ul li {
-        display: block;
-        margin:50px 0;
-        line-height:30px;
-    }
-    nav ul li a {
-        font-size: 20px;
-    }
-    a.active, a:hover {
-        background: none;
-        color: #4162e6;
-    }
-    #check:checked ~ ul {
-        left: 0;
-    }
+.nav {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
 }
-   label.logo {
-    color: white;
-    font-size: 22px;
-    line-height: 80px;
-     font-weight: bold;
-     padding-left: 15px;
-   }
-   .nav {
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-   }
-   * {
-    padding: 0;
-    margin: 0;
-   }
+* {
+  padding: 0;
+  margin: 0;
+}
+.bold {
+  font-weight: bold;
+}
